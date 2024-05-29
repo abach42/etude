@@ -10,6 +10,8 @@ Peak chain stops, if following is equal or has a valley (goes down and up).
 
 Working example would be: 0, 1, 2, 3, 3, 4, 0, 6, 10, 8, 5, 2, 3, 4
 
+```
+
  10  |                          *                                    
      |                                        
   8  |                              *        
@@ -22,6 +24,7 @@ Working example would be: 0, 1, 2, 3, 3, 4, 0, 6, 10, 8, 5, 2, 3, 4
      |  *
      *--+---+---+---+---+----*---+---+---+---+---+---+
      0   1   2   3   4   5   6   7   8   9  10  11  12
+```
 
 TV series was boring, so I painted it for you to see it clearly. 
 Chain starts at x=0 but stops at x=3, because follower is equal (y=3, y=3). 
