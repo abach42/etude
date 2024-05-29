@@ -51,9 +51,9 @@ public class LongestPeakFinder {
             int movement = Integer.compare(numbers[i + 1], numbers[i]); 
 
             if (movement == 1) {
-                //up
+                // up
                 if (wasDownward) {
-                    // down and up
+                    // down and up, valley
                     reset(); 
                 }
                 wasDownward = false; 
@@ -61,8 +61,8 @@ public class LongestPeakFinder {
             } 
             
             if (movement == -1) {
-                 //down
-                 wasDownward = true;
+                // down
+                wasDownward = true;
                 currentChainLength++;
             } 
             
