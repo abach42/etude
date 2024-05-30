@@ -28,10 +28,10 @@ Working example would be: 0, 1, 2, 3, 3, 4, 0, 6, 10, 8, 5, 2, 3, 4
 
 TV series was boring, so I painted it for you to see it clearly. 
 Chain starts at x=0 but stops at x=3, because follower is equal (y=3, y=3). 
-So it restarts, goes up top peak at x=8 (enjoys the view), slides all the way down to x=11. 
+So it restarts and ends on x=6. Newly restarts x=6, goes up top peak at x=8 (enjoys the view), slides all the way down to x=11. 
 Then it stops, because follower goes up again. x=11 is a valley - inverted peak. 
 
-So we climb from x=4 to peak and slide down x=11, that counts 6 elements, would be longest peak. 
+So we climb from x=6 to peak and slide down x=11, that counts 6 elements, would be longest peak. 
 Code of working example should result count 6. 
 
 :bulb: [Link to code example](src/main/java/com/abach42/etude/number_chain/LongestPeakFinder.java)
