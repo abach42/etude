@@ -24,7 +24,7 @@ public class LongestChainFinderTest {
     @MethodSource("testCases")
     @DisplayName("Test find longest peak by Spaceship <=>")
     public void testFindLongestPeak(int[] numbers, int expected) {
-        assertEquals(expected, subject.findSpaceship(numbers));
+        assertEquals(expected, subject.findBySpaceship(numbers));
     }
 
     static Stream<Arguments> testCases() {

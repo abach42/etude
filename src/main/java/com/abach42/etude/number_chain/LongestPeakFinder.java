@@ -37,7 +37,7 @@ public class LongestPeakFinder {
         return Math.max(maxChainLength, currentChainLength);
     }
 
-    public int findSpaceship(int[] numbers) {
+    public int findBySpaceship(int[] numbers) {
         if (numbers.length == 0) {
             return 0;
         }
