@@ -15,14 +15,14 @@ public class FibonacciGeneratorTest {
 
     @ParameterizedTest(name = "{1} fibonacci operation/s result ''{0}''")
     @MethodSource("testCases")
-    @DisplayName("Test fibonacci using loop")
+    @DisplayName("fibonacci using loop")
     public void testFibonacciLoop(List<Integer> expected, int operations) {
         assertEquals(expected, new FibonacciLoopGenerator().getIntegerList(operations));
     }
 
     @ParameterizedTest(name = "{1} fibonacci operation/s result ''{0}''")
     @MethodSource("testCases")
-    @DisplayName("Test fibonacci using stream")
+    @DisplayName("fibonacci using stream")
     public void testFibonacciStream(List<Integer> expected, int operations) {
         assertEquals(expected, new FibonacciStreamGenerator().getIntegerList(operations));
     }

@@ -6,6 +6,11 @@ import java.util.stream.Stream;
 
 public class FibonacciStreamGenerator implements FibonacciList {
 
+    @Override
+    public List<Integer> getIntegerList(int numberOfOperations) {
+        return generateFibonacci(numberOfOperations);
+    }
+
     private List<Integer> generateFibonacci(int operations) {
         List<Integer> chain = new ArrayList<>(List.of(0));
 
@@ -15,10 +20,5 @@ public class FibonacciStreamGenerator implements FibonacciList {
                 .forEach(chain::add);
 
         return chain;
-    }
-
-    @Override
-    public List<Integer> getIntegerList(int numberOfOperations) {
-        return generateFibonacci(numberOfOperations);
     }
 }

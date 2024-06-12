@@ -34,10 +34,10 @@ Then it stops, because follower goes up again. x=11 is a valley - inverted peak.
 So we climb from x=6 to peak and slide down x=11, that counts 6 elements, would be longest peak. 
 Code of working example should result count 6. 
 
-:bulb: [Link to code example](src/main/java/com/abach42/etude/number_chain/LongestPeakFinder.java)
+:bulb: [Link to code example](src/main/java/com/abach42/etude/longestpeak/LongestPeakFinder.java)
 You will find two of multiple solutions.
 
-:pill: [Link to test](src/test/java/com/abach42/etude/number_chain/LongestChainFinderTest.java)
+:pill: [Link to test](src/test/java/com/abach42/etude/longestpeak/LongestChainFinderTest.java)
 Both are working... 
 
 ## 2 Coding Kata

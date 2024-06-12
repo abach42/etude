@@ -6,6 +6,11 @@ import java.util.List;
 
 public class FibonacciLoopGenerator implements FibonacciList {
 
+    @Override
+    public List<Integer> getIntegerList(int numberOfOperations) {
+        return generateFibonacci(numberOfOperations);
+    }
+
     private List<Integer> generateFibonacci(int operations) {
         List<Integer> chain = new ArrayList<>(Arrays.asList(-1, 1));
 
@@ -14,10 +19,5 @@ public class FibonacciLoopGenerator implements FibonacciList {
         }
 
         return chain.subList(2, chain.size());
-    }
-
-    @Override
-    public List<Integer> getIntegerList(int numberOfOperations) {
-        return generateFibonacci(numberOfOperations);
     }
 }

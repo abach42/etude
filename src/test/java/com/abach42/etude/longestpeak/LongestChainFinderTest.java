@@ -1,4 +1,4 @@
-package com.abach42.etude.number_chain;
+package com.abach42.etude.longestpeak;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -10,21 +10,18 @@ import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
 public class LongestChainFinderTest {
-
-    private LongestPeakFinder subject = new LongestPeakFinder();
-
-    @ParameterizedTest(name = "{index} ==> the longest chain in ''{0}'' is {1}")
+    @ParameterizedTest(name = "in ''{0}'' is {1}")
     @MethodSource("testCases")
-    @DisplayName("Test find longest peak by pointer")
+    @DisplayName("count of longest peak by pointer")
     public void testFindByPointer(int[] numbers, int expected) {
-        assertEquals(expected, subject.findByPointer(numbers));
+        assertEquals(expected, new LongestPeakPointer().findLongestPeak(numbers));
     }
 
-    @ParameterizedTest(name = "{index} ==> the longest chain in ''{0}'' is {1}")
+    @ParameterizedTest(name = "in ''{0}'' is {1}")
     @MethodSource("testCases")
-    @DisplayName("Test find longest peak by Spaceship <=>")
-    public void testFindLongestPeak(int[] numbers, int expected) {
-        assertEquals(expected, subject.findBySpaceship(numbers));
+    @DisplayName("of longest peak by Spaceship <=>")
+    public void testFindBySpaceship(int[] numbers, int expected) {
+        assertEquals(expected, new LongestPeakSpaceship().findLongestPeak(numbers));
     }
 
     static Stream<Arguments> testCases() {
