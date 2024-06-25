@@ -40,6 +40,17 @@ You will find two of multiple solutions.
 :pill: [Link to test](src/test/java/com/abach42/etude/longestpeak/LongestChainFinderTest.java)
 Both are working... 
 
-## 2 Coding Kata
+## 2 Fibonacci
+Generate fibonacci list of integers on given maximum of mathematical operations. 
 
-tbd...
+List begins mathematically correct with 0, e.g. 
+`0, 1, 1, 2, 3, 5, 8, 13, 21` 
+appears on 8 operations.
+
+:bulb: [Link to code example using a loop](src/main/java/com/abach42/etude/fibonacci/FibonacciLoopGenerator.java). 
+
+:bulb: [Link to code example using stream](src/main/java/com/abach42/etude/fibonacci/FibonacciStreamGenerator.java).
+
+:pill: [Link to test](src/test/java/com/abach42/etude/fibonacci/FibonacciGeneratorTest.java)
+
+## 3 tbd...
