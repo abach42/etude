@@ -56,4 +56,11 @@ appears on 8 operations.
 
 :pill: [Link to test](src/test/java/com/abach42/etude/fibonacci/FibonacciGeneratorTest.java)
 
-## 3 tbd...
+## 3 DnaEncoder
+Compress nucleotides (A, C, G, T), being able to decompress this again. 
+
+:bulb: [Link to code example](src/main/java/com/abach42/etude/dnaencoding/DnaEncoder.java)
+
+:pill: [Link to test](src/test/java/com/abach42/etude/dnaencoding/DnaEncoderTest.java)
+
+## 4 tbd. 
