@@ -32,14 +32,14 @@ public class DnaEncoder {
 
         public static Nucleotide tryFromChar(char nucleotideChar) {
             try {
-                return Nucleotide.valueOf(String.valueOf(nucleotideChar));
+                return Nucleotide.valueOf(String.valueOf(nucleotideChar).toUpperCase());
             } catch (IllegalArgumentException e) {
                 throw new IllegalArgumentException("Invalid nucleotide character: " + nucleotideChar);
             }
         }
     }
 
-    public static Byte[] compress(String nucleoideString) {
+    public static Byte[] compress(String nucleoideString) throws IllegalArgumentException {
         return nucleoideString
                 .chars()
                 .mapToObj(nucleotideChar -> Nucleotide.tryFromChar((char) nucleotideChar).value)
